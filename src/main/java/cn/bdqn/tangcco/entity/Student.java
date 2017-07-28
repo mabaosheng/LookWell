@@ -30,4 +30,22 @@ public class Student {
     public void setUserId(Integer userId) {
         this.userId = userId;
     }
+
+    public Student() {
+    }
+
+    public Student(Integer studentId, String studentNum, Integer userId) {
+        this.studentId = studentId;
+        this.studentNum = studentNum;
+        this.userId = userId;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentId=" + studentId +
+                ", studentNum='" + studentNum + '\'' +
+                ", userId=" + userId +
+                '}';
+    }
 }
